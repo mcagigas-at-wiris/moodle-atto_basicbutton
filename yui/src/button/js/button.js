@@ -34,8 +34,9 @@
 
 Y.namespace('M.atto_basicbutton').Button = Y.Base.create('button', Y.M.editor_atto.EditorPlugin, [], {
     initializer: function() {
+    	// Add a basic button which ties into the execCommand.
         this.addBasicButton({
-            exec: '',
+			exec: '',
             icon: '',
             // Watch the following tags and add/remove highlighting as appropriate:
             tags: ''
